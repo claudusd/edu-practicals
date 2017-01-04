@@ -5,7 +5,65 @@
             <title><%= htmlWebpackPlugin.options.title %></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    <style>
+    html,body{
+    	height:100%;
+    	font-size:0;
+    	top:0;
+    	margin:0;
+    	width:100%;
+    }
+    body{
+    	margin:0 !important;
+    	position:absolute;
+    	top:0;
+    }
+    div{
+    	display:inline-block;width:33.33%;height:100%;
+    }
+    p{
+    	font-size:50px;
+    	position:relative;
+    }
+    nav{
+    	font-size:12px;
+    	width:100%;
+    	height:50px;
+    	background-color:purple;
+    	text-align:right;
+    	text-transform:uppercase;
+    	color:white;
+    	line-height:50px;
+    	padding:0 20px;
+    }
+    nav li {
+    	display:inline-block;
+    	padding:0 20px;
+    }
+    nav li:hover{
+    	color:red;
+    	transition:ease-in-out 0.3s;
+    	cursor:pointer;
+    }
+    </style>
     <body>
+    <section>
+	    <nav>
+		    <ul>
+		    	<li> Menu</li>
+		    	<li> Historique</li>
+		    	<li> Les trains</li>
+		    	<li> Hawaii</li>
+		    </ul>
+		</nav>
+    </section>
 
+    	<div style="background:pink;position:absolute;top:0;width:80px;height:15px;left:80px"></div>
+    	<div style="background:pink;position:absolute;top:80px;width:80px;height:15px;"></div>
+    	<div style="background:pink;position:absolute;top:40px;width:80px;height:15px;"></div>
+    	<div style="background:pink;position:absolute;top:40px;width:80px;height:15px;left:80px"></div>
+    	<div style="background:pink;position:absolute;top:0px;width:15px;height:80px;left:73px"></div>
+
+    	<p id="maDivSurTonFront"></p>
     </body>
 </html>
